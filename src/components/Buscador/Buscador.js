@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { getMovies } from "../../actions";
+import { useDispatch } from "react-redux";
+import { getMovies } from "../../actions/index.js";
 import style from './Buscador.module.css';
 
 

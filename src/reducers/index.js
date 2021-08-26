@@ -1,4 +1,4 @@
-import { GET_MOVIES, ADD_FAVOURITE_MOVIE, REMOVE_FAVOURITE, GET_DETAIL_MOVIE } from "../actions";
+import { GET_MOVIES, ADD_FAVOURITE_MOVIE, REMOVE_FAVOURITE, GET_DETAIL_MOVIE } from "../actions/index.js";
 
 const initialState = {
     moviesSearch: [],

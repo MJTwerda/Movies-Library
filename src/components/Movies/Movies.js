@@ -1,6 +1,6 @@
 import React from 'react'; 
 import { NavLink } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { addFavouriteMovies } from '../../actions/index';
 
 import style from './Movies.module.css';
