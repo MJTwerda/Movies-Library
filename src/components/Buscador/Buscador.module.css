@@ -1,0 +1,60 @@
+.label {
+    padding-right: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    color:rgb(209, 196, 171);
+}
+
+.cuerpoBuscador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    background-image: url('../../img/imgFondo.png');
+}
+
+.formContainer {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    top: 35px;
+    position: absolute;
+    margin-top: 60px;
+    margin-bottom: 100px;
+    margin-right: 60px;
+    background: linear-gradient(45deg, rgb(49, 40, 38, 0.9),  rgb(235, 68, 53, 0.7));
+    border-radius: 60%;
+    padding-top: 50px;
+    padding-bottom: 45px;
+    width: 800px;
+    height: 10px;
+    box-shadow: 0 0 15px rgb(108, 110, 114);
+}
+
+.barraInput {
+    margin: 10px;
+    width: 10cm;
+    background-color: transparent;
+    outline: none;
+    border: 0px;
+    border-bottom: 3.5px solid rgba(124, 87, 87, 0.5);
+    border-left: 5px solid rgba(221, 218, 218, 0.5);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+}
+.barraInput:focus {
+    background: linear-gradient(to right, rgba(223, 177, 181, 0.5), rgba(165, 40, 51, 0.5));
+}
+
+.btn {
+    width: 1.8cm;
+    background-color:rgb(44, 44, 44);
+    color:rgb(209, 196, 171);
+    border-radius: 10%;
+    height: 29px;
+}
+.btn:hover {
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
+}
+
