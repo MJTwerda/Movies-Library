@@ -1,0 +1,62 @@
+.cuerpoPelis {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.indMovie {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    margin: 50px;
+    margin-bottom: 15px;
+    background-color: rgba(165, 162, 162, 0.5);
+    border-radius: 10px;
+    width: 7.4cm;
+    height: 11.4cm;
+}
+
+.indLink {
+    top: 2px;
+    display: flex;
+    justify-content:center;
+    align-self: center;
+    color: black;
+}
+
+.imgMovie {
+    display: flex;
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    padding-bottom: 8px;
+    border-radius: 10px;
+    height: 385px;
+    width: 260px;
+    
+}
+.imgMovie:hover {
+    filter: saturate(150%);
+    -webkit-transform:scale(1.2);
+    transform:scale(1.2);
+}
+
+.btnFav {
+    display: flex;
+    align-self: flex-end;
+    justify-content: center; 
+    width: 2.5cm;
+    background-color:rgb(44, 44, 44);
+    color:rgb(209, 196, 171);
+    border-radius: 10%;
+    margin-bottom: 5px;
+}
+.btnFav:hover {
+    -webkit-transform:scale(1.2);
+    transform:scale(1.2);
+}
+
+.indTitle {
+   display: flex;
+   justify-content: center;
+}
