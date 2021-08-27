@@ -1,14 +1,16 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import Logo from '../../logoHenry.png'
+import Logo from '../../img/iconNavBar.png';
 
 //import './Navbar.css';
+import style from './NavBar.module.css';
 
 export default function NavBar() {
     return (
-        <header className="navbar">
+        <div className={style.navContainer}>
+        {/* <header className={style.navbar}> */}
             <div>
-                <img id="logoHenry" src={Logo} width="30" height="30" className="d-inline-block align-top" alt="" />
+                <img className={style.logo} src={Logo} alt="" />
             </div>
             <nav>
                 <ul className="list">
@@ -18,6 +20,7 @@ export default function NavBar() {
                     </h3>
                 </ul>
             </nav>
-        </header>
+        {/* </header> */}
+       </div>
     )
 }
