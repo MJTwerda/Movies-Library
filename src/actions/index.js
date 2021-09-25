@@ -14,6 +14,7 @@ export function getMovies(title) {
         .then(responsive => {
             dispatch({type: GET_MOVIES, payload: responsive})
         })
+        .catch(error => error)
     }
 }
 export function addFavouriteMovies(payload) {

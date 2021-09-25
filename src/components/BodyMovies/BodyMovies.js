@@ -9,6 +9,17 @@ export default function BodyMovies() {
     
     const movies = useSelector(state => state.moviesSearch);
 
+    if (movies === undefined) {
+        return (
+            <div className={style.container}>
+                <div className={style.Buscador_componente}>
+                    <Buscador />
+                </div>
+                {alert('No encontramos la película que buscaste, intentás con otro título?')}
+            </div>
+        )
+    }
+
     if (movies.length === 0) {
         return (
             <div className={style.container}>
