@@ -26,7 +26,6 @@ export default function BodyMovies() {
                 <div className={style.Buscador_componente}>
                     <Buscador />
                 </div>
-                {/* {alert('No se pudo acceder a la base de datos')} */}
             </div>
     )}
 

@@ -1,18 +1,5 @@
-/* .navbar {
-    height: 56px;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background-color: #303236;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    box-sizing: border-box;
-} */
-
 .navContainer {
-    height: 56px;
+    height: 76px;
     width: 100%;
     top: 0;
     left: 0;
@@ -22,44 +9,42 @@
     align-items: center;
     padding: 0 20px;
     box-sizing: border-box;
+    text-decoration: none;
+    padding-bottom: 40px;
 }
 
 .logo {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
+    padding-left: 60px;
+    padding-top: 40%;
 }
 
-.navbar nav {
-    height: 100%;
-}
-
-.list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+.listNav {
+    list-style-type: none;
     display: flex;
-    flex-flow: row;
-    align-items: center;
-    height: 100%;
+    flex-direction: row;
+    padding-right: 60px;
 }
 
-.list-item {
-    margin: 0;
-    display: flex;
-    height: 100%;
-    width: auto;
-    align-items: center;
+.linkItem {
+    padding: 18px;
+    padding-top: 30%;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(209, 196, 171);
 }
 
-.list-item a {
+/* .list-item a {
     color: white;
     height: 100%;
     padding: 16px 10px;
     border-bottom: 4px solid transparent;
-}
+    text-decoration: none;
+} */
 
-.list-item a:hover,
+/* .list-item a:hover,
 .list-item a.active {
     background-color: #808080;
     color: white;
-}
+} */
