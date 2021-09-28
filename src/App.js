@@ -13,7 +13,7 @@ function App() {
       <Route exact path ='/' component={BodyMovies} />
       <Route path="/favs" component={Favorites} />
       <Route path="/movie/:id" 
-              render={({match}) => <DetailMovie idMovie={match.params.id} />} />
+            render={({match}) => <DetailMovie idMovie={match.params.id} />} />
     </React.Fragment>
   );
 }
