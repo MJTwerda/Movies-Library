@@ -12,12 +12,20 @@ export default function Favorites() {
     <div className={style.favContainer}>
       <ul>
         {favoritas?.map(fav =>
-          <h4>
-            <Link to={`movie/${fav.id}`}>
-              {fav.title}
+          <div className={style.favMovie}>
+            <div className={style.btn_container} >
+              <button className={style.btn_close} 
+                      onClick={() => dispatch(removeFavouriteMovie(fav.id))}>
+                      Eliminar
+              </button>
+            </div> 
+            <Link to={`movie/${fav.id}`} className={style.linkItem} >
+              <img src={fav.image} alt={'No se encontró'} className={style.img}/>
             </Link>
-            <button onClick={() => dispatch(removeFavouriteMovie(fav.id))}>X</button>
-          </h4>
+            <div>
+              
+            </div>
+          </div>
         )}
       </ul>
     </div>
