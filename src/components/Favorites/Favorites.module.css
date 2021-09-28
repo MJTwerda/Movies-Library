@@ -1,0 +1,17 @@
+.favContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../../img/imagenFondo.png');
+    background-position: top center;
+    background-size: cover;
+    Height: 89vh;
+    right: 50px;
+}
+
+.titulo {
+    padding-right: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    color:rgb(209, 196, 171);
+}

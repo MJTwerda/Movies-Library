@@ -23,7 +23,8 @@
     margin-top: 60px;
     margin-bottom: 100px;
     margin-right: 60px;
-    background: linear-gradient(45deg, rgb(49, 40, 38, 0.9),  rgb(235, 68, 53, 0.7));
+    background: linear-gradient(45deg, rgb(49, 40, 38, 0.9), rgb(235, 68, 53, 0.7));
+    /* background: linear-gradient(45deg, rgb(195, 170, 121), rgb(80, 70, 52)); */
     border-radius: 60%;
     padding-top: 50px;
     padding-bottom: 45px;

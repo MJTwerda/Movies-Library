@@ -11,19 +11,16 @@ export default function Movies({allMovies}) {
     
     return (
         <div className={style.cuerpoPelis}>
-    
-          {allMovies === undefined ? alert('No se encontraron resultados.. Posiblemente su película es malísima')
-          : allMovies?.map(s => 
+          {allMovies?.map(s => 
+            <div className={style.indMovie} key={s.id}>
+              <NavLink to={`movie/${s.imdbID}`} className={style.indLink}>
+            <img src={s.Poster} className={style.imgMovie} alt='No encontrada'/>
+              </NavLink>
 
-          <div className={style.indMovie} key={s.id}>
-            <NavLink to={`movie/${s.imdbID}`} className={style.indLink}>
-          <img src={s.Poster} className={style.imgMovie} alt='No encontrada'/>
-            </NavLink>
-
-              <button className={style.btnFav} onClick={() => 
-              dispatch(addFavouriteMovies({title: s.Title, id: s.imdbID, image: s.Poster}))}>Fav
-              </button>
-          </div> 
+                <button className={style.btnFav} onClick={() => 
+                dispatch(addFavouriteMovies({title: s.Title, id: s.imdbID, image: s.Poster}))}>Fav
+                </button>
+            </div> 
           )} 
       </div>
     )

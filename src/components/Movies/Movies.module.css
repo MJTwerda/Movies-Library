@@ -54,6 +54,10 @@
 .btnFav:hover {
     -webkit-transform:scale(1.2);
     transform:scale(1.2);
+    cursor:grab;
+}
+.btnFav:active {
+    cursor:grabbing;
 }
 
 .indTitle {

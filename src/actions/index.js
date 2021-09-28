@@ -1,5 +1,6 @@
 //Establezco una variable de entorno, donde se encuentra la clave de la Api necesaria para hacer los request.
 //En este archivo cambiar todas las ${REACT_APP_API_KEY} por su propia Api Key.
+import store from '../store/index';
 const { REACT_APP_API_KEY } = process.env;
 
 export const GET_MOVIES = 'GET_MOVIES';
@@ -18,9 +19,11 @@ export function getMovies(title) {
     }
 }
 export function addFavouriteMovies(payload) {
+    let favorites = store.getState().favouritesMovies;
+    if (!favorites.includes(payload))
     return {
         type: ADD_FAVOURITE_MOVIE,
-        payload: payload
+        payload
     }
 }
 export function removeFavouriteMovie(id) {
