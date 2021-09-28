@@ -8,13 +8,13 @@ import BodyMovies from "./components/BodyMovies/BodyMovies";
 
 function App() {
   return (
-      <React.Fragment>
-          <NavBar />
-          <Route exact path ='/' component={BodyMovies} />
-          <Route path="/favs" component={Favorites} />
-          <Route path="/movie/:id" 
-                 render={({match}) => <DetailMovie idMovie={match.params.id} />} />
-      </React.Fragment>
+    <React.Fragment>
+      <NavBar />
+      <Route exact path ='/' component={BodyMovies} />
+      <Route path="/favs" component={Favorites} />
+      <Route path="/movie/:id" 
+              render={({match}) => <DetailMovie idMovie={match.params.id} />} />
+    </React.Fragment>
   );
 }
 

@@ -7,36 +7,36 @@ import style from './BodyMovies.module.css';
 
 export default function BodyMovies() {
     
-    const movies = useSelector(state => state.moviesSearch);
+  const movies = useSelector(state => state.moviesSearch);
 
-    if (movies === undefined) {
-        return (
-            <div className={style.container}>
-                <div className={style.Buscador_componente}>
-                    <Buscador />
-                </div>
-                {alert('No encontramos la película que buscaste, intentás con otro título?')}
-            </div>
-        )
-    }
+  if (movies === undefined) {
+    return (
+      <div className={style.container}>
+        <div className={style.Buscador_componente}>
+          <Buscador />
+        </div>
+          {alert('No encontramos la película que buscaste, intentás con otro título?')}
+      </div>
+    )
+  }
 
-    if (movies.length === 0) {
-        return (
-            <div className={style.container}>
-                <div className={style.Buscador_componente}>
-                    <Buscador />
-                </div>
-            </div>
+  if (movies.length === 0) {
+    return (
+      <div className={style.container}>
+        <div className={style.Buscador_componente}>
+          <Buscador />
+        </div>
+      </div>
     )}
 
-    return (
-        <div className={style.cont_con_movies}>
-            <div className={style.Buscador_componente}>
-                <Buscador />
-            </div>
-            <div className={style.Movies_componente}>
-                <Movies allMovies={movies}/>
-            </div>
+  return (
+    <div className={style.cont_con_movies}>
+      <div className={style.Buscador_componente}>
+        <Buscador />
+      </div>
+        <div className={style.Movies_componente}>
+          <Movies allMovies={movies}/>
         </div>
-    )
+    </div>
+  )
 }
