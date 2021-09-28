@@ -9,7 +9,7 @@ export const GET_DETAIL_MOVIE = 'GET_DETAIL_MOVIE';
 
 export function getMovies(title) {
     return function (dispatch) {
-        return fetch(`http://www.omdbapi.com/?apikey=${REACT_APP_API_KEY}&s=` + title)
+        return fetch(`http://www.omdbapi.com/?apikey=${REACT_APP_API_KEY}&s=${title}`)
         .then(data => data.json())
         .then(responsive => {
             dispatch({type: GET_MOVIES, payload: responsive})
@@ -17,12 +17,17 @@ export function getMovies(title) {
         .catch(error => error)
     }
 }
-export function addFavouriteMovies(payload) {
-    return {
-        type: ADD_FAVOURITE_MOVIE,
-        payload
+export function addFavouriteMovies(id) {
+    return function(dispatch) {
+        fetch(`http://www.omdbapi.com/?apikey=${REACT_APP_API_KEY}&i=${id}&plot=full`)
+        .then(data => data.json())
+        .then(movie => {
+            dispatch({type: ADD_FAVOURITE_MOVIE, payload: movie})
+        })
+        .catch(error => error)
     }
 }
+
 export function removeFavouriteMovie(id) {
     return {
         type: REMOVE_FAVOURITE,
@@ -31,7 +36,7 @@ export function removeFavouriteMovie(id) {
 }
 export function getDetailMovie(id) {
     return function(dispatch) {
-        return fetch(`http://www.omdbapi.com/?apikey=${REACT_APP_API_KEY}&i=` + id)
+        return fetch(`http://www.omdbapi.com/?apikey=${REACT_APP_API_KEY}&i=${id}`)
         .then(data => data.json())
         .then(responsive => {
             dispatch({type: GET_DETAIL_MOVIE, payload: responsive})
