@@ -22,7 +22,7 @@ export function rootReducer(state=initialState, action) {
   if (action.type === REMOVE_FAVOURITE){
     return {
       ...state,
-      favouritesMovies: state.favouritesMovies.filter(m => m.id !== action.payload)
+      favouritesMovies: state.favouritesMovies.filter(m => m.imdbID !== action.payload)
     }
   }
   if (action.type === GET_DETAIL_MOVIE){

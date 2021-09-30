@@ -18,7 +18,7 @@ export default function Movies({allMovies}) {
           </NavLink>
 
           <button className={style.btnFav} onClick={() => 
-            dispatch(addFavouriteMovies(s.imdbID))}>Fav
+            dispatch(addFavouriteMovies(s.imdbID))}>❤
           </button>
         </div> 
       )} 
