@@ -15,12 +15,12 @@ export default function Favorites() {
   }
 
   return(
-    <div className={style.favContainer}>
+    <div className={favoritas.length > 1 ? style.favContainer : style.favContOne}>
       <ul>
         {favoritas?.map(fav =>
           <div className={style.favMovie}>
             <button className={style.btn_close} 
-                    onClick={() => dispatch(removeFavouriteMovie(fav.id))}>
+                    onClick={() => dispatch(removeFavouriteMovie(fav.imdbID))}>
                     Eliminar
             </button>
             <Link to={`movie/${fav.imdbID}`} className={style.linkItem} >

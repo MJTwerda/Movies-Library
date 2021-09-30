@@ -18,6 +18,19 @@
     padding-bottom: 50px;
 }
 
+.favContOne {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    background-image: url('../../img/imagenFondo.png');
+    background-position: center;
+    background-size: cover;
+    Height: 89vh;
+    right: 50px;
+    padding-left: 100px;
+    padding-bottom: 50px;
+}
+
 .favMovie {
     width: 1050px;
     height: 310px;
