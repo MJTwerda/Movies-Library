@@ -10,7 +10,7 @@ export default function DetailMovie({idMovie}) {
 
   useEffect(() => {
     dispatch(getDetailMovie(idMovie));
-  }, [detail])
+  }, [detail, dispatch, idMovie])
     
   return(
     <div className={style.container}>
